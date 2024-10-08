@@ -1,0 +1,483 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Unbounded", sans-serif;
+}
+
+body {
+    background-color: #222121;
+}
+
+.page {
+    padding: 0 50px;
+}
+
+.title_container {
+    text-align: center;
+    padding-top: 180px;
+    margin-bottom: 115px;
+}
+
+.title {
+    font-size: 124px;
+    font-weight: 900;
+    color: #fff;
+    display: inline;
+    position: relative;
+}
+
+.title_img {
+    position: absolute;
+    z-index: 1;
+    top: -20%;
+    right: 0;
+}
+
+.sub_title {
+    display: inline;
+    font-size: 124px;
+    font-weight: 900;
+    color: #6F31FF;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.sub_title span {
+    color: #222121;
+}
+
+.smile {
+    position: absolute;
+}
+
+.one {
+    left: -9%;
+    top: 16%;
+}
+
+.two {
+    right: 9%;
+    top: 28%;
+    rotate: 70deg;
+}
+
+.title_btn {
+    color: #222121;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 25px 30px;
+    margin-top: 120px;
+
+    border: none;
+    border-radius: 32px;
+
+    background-color: #0EFF1E;
+}
+
+.container_one {
+    padding: 5% 7%;
+    color: #222121;
+    margin-bottom: 55px;
+
+    border-radius: 65px;
+
+    background-color: #0EFF1E;
+}
+
+.stazg {
+    font-size: 63px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.spec_container {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.spec_one,
+.spec_two {
+    padding: 24px;
+    flex: 1;
+
+    border: 1px solid;
+    border-radius: 62px;
+}
+
+.spec_one {
+    margin-right: 22px;
+}
+
+.spec_text {
+    font-size: 20px;
+    font-weight: 400;
+
+    margin-top: 55px;
+}
+
+.container_two {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 165px;
+    height: 688px;
+}
+
+.birthday,
+.anniversary,
+.holiday {
+    padding: 32px;
+    color: #fff;
+
+    border-radius: 55px;
+}
+
+.container_two_title {
+    font-size: 63px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.container_two_text {
+    font-size: 32px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, .68);
+    margin-top: 33px;
+}
+
+.anniversary {
+    border: 1px solid #0EFF1E;
+    margin-bottom: 20px;
+}
+
+.holiday {
+    background-color: #2B51E8;
+}
+
+.anniversary,
+.holiday {
+    height: 48%;
+}
+
+.holiday_container {
+    padding-left: 20px;
+    height: 100%;
+}
+
+.birthday {
+    width: 61%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #FD813C;
+}
+
+.birthday_btn {
+    padding: 5% 6%;
+    color: #222121;
+    font-size: 32px;
+    font-weight: 400;
+    font-family: "Unbounded", sans-serif;
+    border: none;
+    border-radius: 26px;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.container_free {
+    background-color: #0EFF1E;
+    border-radius: 56px;
+    padding: 32px;
+    margin-bottom: 50px;
+}
+
+.footer_title_container,
+.svaz_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_title {
+    font-size: 64px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.svaz_container img {
+    margin-right: 30px;
+}
+
+.svaz_texts {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.write {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 60px;
+}
+
+.footer_link {
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    display: block;
+    color: rgba(34, 33, 33, .70);
+}
+
+.container_free .footer_link:first-child {
+    margin-bottom: 7px;
+}
+
+
+@media (max-width: 1280px) {
+    .two {
+        right: 5%;
+        width: 14%;
+    }
+
+    .one {
+        left: -5%;
+        top: 95%;
+        width: 14%;
+    }
+
+    .title,
+    .sub_title {
+        font-size: 110px;
+    }
+
+    .title_img {
+        width: 72%;
+    }
+
+    .anniversary {
+        margin-bottom: 26px;
+    }
+
+    .container_two_title {
+        font-size: 52px;
+    }
+
+    .birthday_btn {
+        font-size: 24px;
+    }
+
+}
+
+@media (max-width: 1080px) {
+    .svaz_container {
+        display: none;
+    }
+
+    .container_two_text {
+        font-size: 30px;
+    }
+
+    .title, .sub_title {
+        font-size: 100px;
+    }
+
+    .container_two_title {
+        font-size: 44px;
+    }
+}
+
+@media (max-width: 950px) {
+    .container_two_text {
+        font-size: 26px;
+    }
+
+    .title, .sub_title {
+        font-size: 84px;
+    }
+
+    .container_two_title {
+        font-size: 38px;
+    }
+
+    .stazg {
+        font-size: 53px;
+    }
+}
+
+@media (max-width: 788px) {
+    .page {
+        padding: 0 16px;
+    }
+
+    .title_container {
+        padding-top: 45px;
+        margin-bottom: 60px;
+    }
+
+    .title,
+    .sub_title {
+        font-size: calc(30px + 10*(100vw / 500));
+    }
+
+    .title_img {
+        width: 72%;
+    }
+
+    .smile {
+        width: 54px;
+    }
+
+    .two {
+        right: 4%;
+        top: 19%;
+    }
+
+    .one {
+        left: -6%;
+        top: 90%;
+    }
+
+    .title_btn {
+        color: #222121;
+        font-size: 13px;
+        font-weight: 400;
+        font-family: "Unbounded", sans-serif;
+        text-transform: uppercase;
+        padding: 15px 25px;
+        margin-top: 50px;
+        border: none;
+        border-radius: 32px;
+        background-color: #0EFF1E;
+    }
+
+    .container_one {
+        border-radius: 31px;
+        padding: 32px 17px 17px 17px;
+    }
+
+    .stazg {
+        font-size: 24px;
+    }
+
+    .spec_container {
+        flex-direction: column;
+    }
+
+    .spec_one,
+    .spec_two {
+        width: 100%;
+        height: 50%;
+        padding: 16px;
+        border-radius: 18px;
+    }
+
+    .spec_one {
+        margin-bottom: 17px;
+    }
+
+    .spec_text {
+        font-size: 14px;
+    }
+
+    .spec_one img {
+        width: 53px;
+    }
+
+    .spec_two img {
+        width: 55px;
+    }
+
+    .container_two {
+        display: block;
+        margin-bottom: 90px;
+    }
+
+    .birthday {
+        width: 100%;
+        height: auto;
+    }
+
+    .anniversary, .holiday {
+        height: auto;
+    }
+
+    .container_two_title {
+        font-size: 32px;
+    }
+
+    .birthday, .anniversary, .holiday {
+        padding: 17px;
+        color: #fff;
+        border-radius: 26px;
+    }
+
+    .container_two_text {
+        font-size: 16px;
+        margin-top: 17px;
+    }
+
+    .birthday_btn {
+        font-size: 15px;
+        padding: 18px 33px;
+        margin-top: 120px;
+    }
+
+    .holiday_container {
+        padding: 0;
+        margin-top: 17px;
+    }
+
+    .anniversary .container_two_text {
+        font-size: 16px;
+        margin-top: 32px;
+    }
+
+    .holiday .container_two_text {
+        font-size: 16px;
+        margin-top: 32px;
+    }
+
+    .container_free {
+        padding: 17px;
+        border-radius: 25px;
+    }
+
+    .svaz_container {
+        display: none;
+    }
+
+    .footer_title {
+        font-size: 36px;
+    }
+
+    .write {
+        font-size: 20px;
+    }
+
+    .footer_link {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    .footer_title {
+        font-size: 30px;
+    }
+
+    .write {
+        font-size: 16px;
+    }
+
+    .footer_link {
+        font-size: 14px;
+    }
+}
